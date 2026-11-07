@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Local database and uploaded images
+backend/multimedia.db
+backend/app/uploads/
+*.db
+
+# AI model weights
+*.pt
