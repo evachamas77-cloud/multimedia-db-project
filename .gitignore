@@ -1,20 +1,90 @@
-# Python
+
+# =====================================
+# PYTHON
+# =====================================
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+
+# =====================================
+# VIRTUAL ENVIRONMENTS
+# =====================================
 venv/
+.venv/
+**/venv/
+**/.venv/
+
+# =====================================
+# ENVIRONMENT VARIABLES AND SECRETS
+# =====================================
 .env
+.env.*
+*.env
+!.env.example
 
-# VS Code
+# =====================================
+# DATABASE FILES
+# =====================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# =====================================
+# UPLOADED IMAGES AND VIDEO FILES
+# =====================================
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
+
+# =====================================
+# AI MODEL WEIGHTS
+# =====================================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.safetensors
+
+# =====================================
+# IDE AND EDITORS
+# =====================================
 .vscode/
+.idea/
 
-# System
+# =====================================
+# PYTHON TESTING
+# =====================================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =====================================
+# LOGS AND TEMPORARY FILES
+# =====================================
+*.log
+*.tmp
+*.bak
+
+# =====================================
+# FRONTEND (REACT)
+# =====================================
+node_modules/
+dist/
+build/
+npm-debug.log*
+
+# =====================================
+# ANDROID
+# =====================================
+.gradle/
+**/build/
+local.properties
+*.iml
+
+# =====================================
+# OPERATING SYSTEM
+# =====================================
 .DS_Store
 Thumbs.db
-
-# Local database and uploaded images
-backend/multimedia.db
-backend/app/uploads/
-*.db
-
-# AI model weights
-*.pt
+desktop.ini
